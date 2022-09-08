@@ -36,7 +36,7 @@ namespace AdventureWorksAPI
                     }
                 })
                 .AddXmlDataContractSerializerFormatters()
-                .AddXmlSerializerFormatters().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+                .AddXmlSerializerFormatters().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);//eviar ciclos
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
